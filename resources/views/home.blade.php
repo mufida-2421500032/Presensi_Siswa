@@ -3,7 +3,7 @@
 @section('title', 'Beranda')
 
 @section('content')
-    <div class="p-4 p-md-5 mb-4 bg-primary text-white rounded-4 shadow-sm">
+    <div class="p-4 p-md-5 mb-4 hero-presensi rounded-4 shadow-sm">
         <div class="py-3">
             <h1 class="display-6 fw-bold">
                 Sistem Presensi Siswa
@@ -13,10 +13,10 @@
                 Admin mengelola data, guru mengisi presensi, siswa dan orang tua memantau kehadiran.
             </p>
             <div class="d-flex flex-wrap gap-2">
-                <a href="{{ route('login') }}" class="btn btn-light btn-lg text-primary fw-semibold">
+                <a href="{{ route('login') }}" class="btn btn-dark btn-lg fw-semibold">
                     Masuk
                 </a>
-                <a href="{{ route('ortu.index') }}" class="btn btn-outline-light btn-lg">
+                <a href="{{ route('ortu.index') }}" class="btn btn-light btn-lg">
                     Cek Presensi Anak
                 </a>
             </div>
