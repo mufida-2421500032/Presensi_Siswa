@@ -63,6 +63,7 @@ class Presensi extends Model
         return self::STATUS[$this->status] ?? ucfirst($this->status);
     }
 
+
     public function badgeStatus(): string
     {
         return match ($this->status) {

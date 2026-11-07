@@ -59,3 +59,5 @@ Route::middleware(['auth', 'role:siswa'])->prefix('siswa')->name('siswa.')->grou
     Route::get('/mapel', [Siswa\MapelController::class, 'index'])->name('mapel.index');
     Route::get('/presensi', [Siswa\PresensiController::class, 'index'])->name('presensi.index');
 });
+
+Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
